@@ -16,5 +16,7 @@ public class Prg2 {
 		//link text
 		d1.get("http://www.seleniumhq.org");
 		d1.findElement(By.linkText("Download")).click();
+		//in orange hrm
+		d1.findElement(By.linkText("Forgot your password?")).click();
 	}
 }
