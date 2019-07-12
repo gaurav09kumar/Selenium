@@ -1,4 +1,3 @@
-//size of the table
 package demo;
 
 import java.util.ArrayList;
@@ -21,7 +20,9 @@ public class Prg5 {
 		driver.findElement(By.xpath("//b[contains(text(),'Admin')]")).click();
 		
 		List<WebElement> rows = driver.findElements(By.xpath("//tbody/tr")); 
+		//size of the table
 		System.out.println(rows.size());
+		//displaying all the items in the table
 		for(WebElement ele: rows) {
 			System.out.println(ele.getText());
 		}
