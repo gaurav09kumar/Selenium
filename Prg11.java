@@ -1,6 +1,4 @@
 package demo;
-
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -25,15 +23,16 @@ public class Prg5 {
 		System.out.println(rows.size());
 		String s;
 
-		for (int i = 1; i < rows.size(); i++) {
+		for (int i = 0; i < rows.size(); i++) {
+			driver.findElement(By.xpath("//b[contains(text(),'Admin')]")).click();
 			s = driver.findElement(By.xpath("//tbody/tr[" + (i + 1) + "]/td[2]")).getText();
 			System.out.println(s);
 			
 			boolean item1 = driver.findElement(By.xpath("//a[contains(text(),'" + s + "')]")).isDisplayed();
-			System.out.println(item1);
+			//System.out.println(item1);
 			
 			boolean item2 = driver.findElement(By.xpath("//a[contains(text(),'" + s + "')]")).isEnabled();
-			System.out.println(item2);
+			//System.out.println(item2);
 			
 			if (item1 == true && item2 == true) {
 				driver.findElement(By.xpath("//a[contains(text(),'"+s+"')]")).click();
