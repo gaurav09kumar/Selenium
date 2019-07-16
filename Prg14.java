@@ -9,7 +9,6 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class Prg9 {
-	private static final WebElement AdminView = null;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
